@@ -1,0 +1,11 @@
+---
+  - name: install and start apache # the name of the playbook
+    hosts: webservers # the name of the hosts this playbook will be run on
+    user: root # the user that will be used to ssh and run the playbook tasks
+
+  tasks:
+    - name : install httpd # the name of the task
+      yum: name=httpd state=present # the module (yum) and the methods that will be run from the module
+
+    - name: start httpd # the name of the task
+      service: name=httpd state=running # the name of the module and the method that will be run
