@@ -1,0 +1,28 @@
+Child Grouping
+[east]
+host1
+host2
+
+[west]
+host3
+host4
+
+[us:children]
+east
+west
+
+This allows you to target specific groups if you want to apply certain tasks to select hosts.
+
+
+Inventory Plugins
+
+Cloud: Rackspace, EC2, GCE
+Bare-metal (Cobbler)
+Custom  Provisioning
+
+
+Connection Types
+
+paramiko (Python SSH module)
+ssh (openSSH)
+local
