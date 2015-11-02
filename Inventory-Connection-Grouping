@@ -26,3 +26,6 @@ Connection Types
 paramiko (Python SSH module)
 ssh (openSSH)
 local
+
+## all connection types to remote machines are done via ssh
+## this is not the case with local machines, for calling uri and apis
